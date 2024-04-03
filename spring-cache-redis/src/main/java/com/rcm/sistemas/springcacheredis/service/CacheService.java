@@ -9,6 +9,8 @@ import java.util.Objects;
 @Service
 public class CacheService {
 
+    // Essa é uma forma manual de limpar o CACHE.
+
     @Autowired
     private CacheManager cacheManager;
 

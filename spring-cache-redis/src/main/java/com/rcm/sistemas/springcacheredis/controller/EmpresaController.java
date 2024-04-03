@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -18,7 +19,7 @@ public class EmpresaController {
 
     @GetMapping()
     public List<Empresa> listAll() {
-        System.out.println("Indo no banco");
+        System.out.println("********* Selecionando Registros ********** "+LocalDateTime.now());
         return this.empresaService.listAll();
     }
 
